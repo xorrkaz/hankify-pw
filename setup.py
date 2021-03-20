@@ -6,6 +6,8 @@ setup(
     description="Generate Hank Preston-y passwords",
     url="https://gitlab.systems.cll.cloud/jclarke/hankify-pw",
     entry_points={"console_scripts": ["hankify-pw=hankify_pw:hanky_pass"]},
+    package_data={"hankify_pw": ["words.txt"]},
+    include_package_data=True,
     author="Joe Clarke",
     author_email="jclarke@cisco.com",
     license="MIT",

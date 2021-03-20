@@ -13,7 +13,7 @@ def hanky_pass():
         "-f",
         metavar="<FILENAME>",
         help="Path to a list of words",
-        default="./words.txt",
+        default=os.path.join(os.path.dirname(__file__), "words.txt"),
         required=False,
     )
     parser.add_argument(
