@@ -2,10 +2,16 @@
 
 This Python script generates a password that Hank Preston would be proud of.
 
+Install it with the following command:
+
+```sh
+python -m pip install git+https://gitlab.systems.cll.cloud/jclarke/hankify-pw.git
+```
+
 All you really need to do is run it:
 
 ```bash
-$ ./hankify-pw.py
+$ hankify-pw
 YoreAnywhySollyaBoatbill81
 ```
 
