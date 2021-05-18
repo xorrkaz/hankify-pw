@@ -4,7 +4,7 @@ setup(
     name="hankify_pw",
     version="1.0.0",
     description="Generate Hank Preston-y passwords",
-    url="https://gitlab.systems.cll.cloud/jclarke/hankify-pw",
+    url="https://github.com/xorrkaz/hankify-pw",
     entry_points={"console_scripts": ["hankify-pw=hankify_pw:hanky_pass"]},
     package_data={"hankify_pw": ["words.txt"]},
     include_package_data=True,
