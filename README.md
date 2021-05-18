@@ -5,7 +5,7 @@ This Python script generates a password that Hank Preston would be proud of.
 Install it with the following command:
 
 ```sh
-python install hankify-pw
+pip install hankify-pw
 ```
 
 All you really need to do is run it:
