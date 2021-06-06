@@ -8,7 +8,7 @@ def readme():
 
 setup(
     name="hankify_pw",
-    version="1.0.1",
+    version="1.1.0",
     description="Generate Hank Preston-y passwords",
     url="https://github.com/xorrkaz/hankify-pw",
     entry_points={"console_scripts": ["hankify-pw=hankify_pw:hanky_pass"]},
