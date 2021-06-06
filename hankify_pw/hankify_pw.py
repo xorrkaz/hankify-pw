@@ -5,6 +5,8 @@ import random
 import os
 import sys
 
+SYMBOL_LIST = ["!", "@", "#", "%", ".", "^", "$", "&", "*", "?"]
+
 
 def hanky_pass():
     parser = argparse.ArgumentParser(prog=sys.argv[0], description="Generate a Hankified password")
@@ -23,6 +25,14 @@ def hanky_pass():
         default=4,
         type=int,
         help="Number of words in a password (default: 4)",
+        required=False,
+    )
+    parser.add_argument(
+        "--add-symbol",
+        "-s",
+        action="store_true",
+        default=False,
+        help="Add a random symbol to the end of the password (default: False)",
         required=False,
     )
     args = parser.parse_args()
@@ -49,7 +59,7 @@ def hanky_pass():
                 pw.append(word.capitalize())
                 break
 
-    print(f"{''.join(pw)}{random.randint(-1, 100):02}")
+    print(f"{''.join(pw)}{random.randint(-1, 100):02}{SYMBOL_LIST[random.randint(0, len(SYMBOL_LIST))] if args.add_symbol else ''}")
 
 
 if __name__ == "__main__":
