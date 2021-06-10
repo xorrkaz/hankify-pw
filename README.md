@@ -16,3 +16,5 @@ YoreAnywhySollyaBoatbill81
 ```
 
 If you want to use an alternate word list, specify `--word-file PATH`.  If you want a longer or shorter password, specify `--num-words` (the default is 4).  The package ships with a default words file from FreeBSD.
+
+If your password requires a symbol to meet policy requirements, specify `--add-symbol` and a random "special" character will be appended to the end of the generated password.
